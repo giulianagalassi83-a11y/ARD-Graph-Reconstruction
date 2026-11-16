@@ -2,7 +2,7 @@
 
 This repository contains the code and data used for graph reconstruction and clustering experiments based on Aggregated Relational Data (ARD).
 
-The repository includes three datasets: **Facebook**, **Cora**, and **Indian Villages**. For each dataset, we provide the data required to reproduce the experiments, along with the Jupyter notebooks implementing each step of the methodology.
+The repository includes three datasets: **Facebook**, **Cora**, and **Indian Villages**. For each dataset, we provide the Jupyter notebooks implementing each step of the methodology. The data files are also included for Facebook and Cora.
 
 ## Repository Structure
 
@@ -32,8 +32,7 @@ ARD-Graph-Reconstruction/
     ├── paso1_synthetic_graphs_indian.ipynb
     ├── paso2_link_prediction_indian.ipynb
     ├── paso3_DGI_indian.ipynb
-    ├── paso4_clustering_indian.ipynb
-    └── data/
+    └── paso4_clustering_indian.ipynb
 ```
 
 ## Methodology
@@ -50,12 +49,14 @@ Each dataset follows the same five-step experimental pipeline:
 
 ## Data
 
-Each dataset folder contains a `data/` subdirectory with the files required to run the corresponding notebooks.
+The **Facebook** and **Cora** folders each contain a `data/` subdirectory with the corresponding dataset files, which can be downloaded directly from the repository.
 
-The data can be downloaded directly from the repository.
+The **Indian Villages** folder contains the experimental notebooks but does not include a `data/` subdirectory.
 
 ## Execution
 
-To reproduce the experiments, download or clone the repository and run the notebooks for the selected dataset in numerical order, starting from `paso0_ARD_matrix.ipynb` and finishing with `paso4_clustering.ipynb`.
+To reproduce the experiments, download or clone the repository and run the notebooks for the selected dataset in numerical order, starting from `paso0_ARD_matrix` and finishing with `paso4_clustering`.
 
-Each dataset can be processed independently using its corresponding notebooks and data files.
+The Facebook and Cora experiments use the data provided in their respective `data/` folders. The Indian Villages experiments require the corresponding data files to be obtained separately.
+
+Each dataset follows an independent experimental pipeline.
